@@ -11,3 +11,88 @@ body {
     margin: 0px;
     background-color: #edf4ed;
 }
+/*Lydie*/
+h2{
+    font-family:"Josefin";
+    text-align:center;
+    align-items: center;
+    color:#79B791;
+    font-size:40px;
+}
+/*Nos produits Lydie*/
+.photoMosaic{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    width:70%;
+    margin-left: 15%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.photoMosaic .text{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align:center;
+    color:#79B791;
+    text-decoration:none;
+    font-size:20px;
+}
+.textdeco{
+    text-decoration:none;
+}
+.img1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-bottom: 100px;
+}
+.img2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-bottom: 50px;
+}
+.img3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.img4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+/*Nous retrouver Lydie*/
+.gridContainer{
+    display:grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    padding:50px;
+    grid-column-gap:50px;
+}
+.gridContainer img{
+    width:100%;
+    height:100%; 
+}
+.maps{
+    width:100%;
+    height:auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.socialMedia{
+    width:20%;
+    height:20%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
