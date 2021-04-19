@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    z-index: 1;
+    z-index: 2;
 }
 h1 {
     display: flex;
@@ -70,6 +70,7 @@ nav {
     top: 0px;
     height: 80px;
     width: 100%;
+    z-index: 1;
 }
 nav div a {
     text-decoration: none;
