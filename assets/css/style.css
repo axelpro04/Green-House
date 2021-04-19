@@ -22,19 +22,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    z-index: 2;
+    z-index: 3;
 }
 h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Amatic";
-    font-size: 130px;
+    font-size: min(130px, 15vw);
+    /* font-size: 130px; */
     color: #EDF4ED;
     background-color: #00000048;
-    width: 90%;
+    width: 92%;
     max-width: 670px;
-    height: 124px;
+    height: min(124px, 15vw);
     margin-top: 10vh;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
@@ -47,12 +48,12 @@ h1 {
     position: absolute;
     width: 100%;
     height: 150px;
-    margin-top: calc(100vh - 150px);
+    bottom: 0px;
 }
 .headerButtons {
     text-decoration: none;
     color: #EDF4ED;
-    font-size: 35px;
+    font-size: min(35px, 4vw);
     margin-bottom: 4vh;
 }
 .headerButtons:hover {
@@ -75,7 +76,7 @@ nav {
 nav div a {
     text-decoration: none;
     color: #EDF4ED;
-    font-size: 25px;
+    font-size: min(25px, 3vw);
 }
 nav div a:hover {
     color: #e7ff60;
@@ -85,6 +86,54 @@ nav div a:hover {
     justify-content: center;
     align-items: center;
 }
+/* hamburger menu */
+#navMenu {
+    display: none;
+}
+#iconMenu {
+    color: #edf4ed;
+    font-size: 40px;
+    transform: rotate(0deg);
+    transition: .3s;
+}
+#navMenu input:checked ~ #iconMenu {
+    transform: rotate(90deg);
+}
+#navMenu input {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+#openMenu {
+    top: 80px;
+    left: 0px;
+    height: auto;
+    margin: 0px;
+    padding: 0px 0px 40px 0px;
+    width: 100%;
+    list-style: none;
+    background-color: #354124;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: .3s;
+}
+#navMenu input:checked ~ #openMenu {
+    transform: scaleY(1);
+}
+#openMenu li {
+    padding-top: 40px;
+}
+#openMenu li a {
+    font-size: 25px;
+}
+/* fin hamburger menu */
 #navLogo {
     grid-area: navLogo;
     justify-content: flex-start;
@@ -93,7 +142,6 @@ nav div a:hover {
 }
 #navLogoTxt {
     font-family: "Amatic";
-    /* font-size: 80px; */
     font-size: min(7vw, 80px);
     margin-top: -10px;
 }
@@ -278,4 +326,32 @@ h4 {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+}
+@media screen and (max-width: 600px) {
+    #headerListButtons {
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        height: 30vh;
+    }
+    .headerButtons {
+        font-size: 30px;
+    }
+    nav div:not(#navMenu) a:not(#navLogoTxt) {
+        display: none;
+    }
+    nav {
+        grid-template-columns: 80% 20%;
+        grid-template-areas:
+            "navLogo navBurger";
+    }
+    #navLogo {
+        margin-left: 5%;
+    }
+    #navLogoTxt {
+        font-size: 80px;
+    }
+    #navMenu {
+        display: flex;
+    }
 }
