@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Amatic";
+    src: url(../fonts/AmaticSC-Bold.ttf);
+}
+@font-face {
+    font-family: "Josefin";
+    src: url(../fonts/JosefinSans-Bold.ttf);
+}
+body {
+    font-family: "Josefin";
+    margin: 0px;
+    background-color: #edf4ed;
+}
