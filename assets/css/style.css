@@ -158,6 +158,7 @@ nav div a:hover {
     height: calc(100vh + 100px);
 }
 #introTxt {
+    overflow: hidden;
     /* font-weight: bold; */
     margin: 3em 0;
     /* padding: 5px 50px 30px 50px; */
