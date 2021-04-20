@@ -328,6 +328,7 @@ h4 {
     grid-row-end: 2;
 }
 @media screen and (max-width: 600px) {
+    /* queries gaetan */
     #headerListButtons {
         align-items: center;
         justify-content: flex-end;
@@ -354,4 +355,7 @@ h4 {
     #navMenu {
         display: flex;
     }
+    /* queries axel */
+
+    /* queries lydie */
 }
