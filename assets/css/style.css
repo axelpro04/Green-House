@@ -159,13 +159,10 @@ nav div a:hover {
 }
 /* bandeaux */
 #introTxt {
-<<<<<<< HEAD
-=======
     overflow: hidden;
     /* font-weight: bold; */
     margin: 3em 0;
     /* padding: 5px 50px 30px 50px; */
->>>>>>> ce65392331a4688fb6a3c8791267f834e6c0921f
     font-size: 125%;
     color: #EDF4ED;
     display: flex;
