@@ -9,7 +9,7 @@
 body {
     font-family: "Josefin";
     margin: 0px;
-    background-color: #edf4ed;
+    background-color: #f4edf1;
 }
 
 #headerPic {
@@ -159,6 +159,13 @@ nav div a:hover {
 }
 /* bandeaux */
 #introTxt {
+<<<<<<< HEAD
+=======
+    overflow: hidden;
+    /* font-weight: bold; */
+    margin: 3em 0;
+    /* padding: 5px 50px 30px 50px; */
+>>>>>>> ce65392331a4688fb6a3c8791267f834e6c0921f
     font-size: 125%;
     color: #EDF4ED;
     display: flex;
@@ -302,12 +309,22 @@ h4 {
     grid-row-end: 2;
 }
 .socialMedia{
-    width:20%;
-    height:20%;
+    width:100%;
+    height:100%;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    text-align: center;
+    font-size:60px;
+}
+#instagram{
+    width:100px;
+    height:100px;
+}
+#facebook{
+    width:100px;
+    height:100px;
 }
 @media screen and (max-width: 600px) {
     /* queries gaetan */
