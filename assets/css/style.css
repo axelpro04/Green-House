@@ -157,16 +157,14 @@ nav div a:hover {
 #filler {
     height: calc(100vh + 100px);
 }
+/* bandeaux */
 #introTxt {
-    /* font-weight: bold; */
-    margin: 3em 0;
-    /* padding: 5px 50px 30px 50px; */
     font-size: 125%;
     color: #EDF4ED;
-    /* box-shadow: 0px .5em 10px .5em #222222d3; */
-    display: grid;
-    grid-template-columns: 2;
+    display: flex;
     height: 500px; 
+    /* border: solid black 3px; */
+    overflow: hidden;
 }
 #containerText{
     height: 420px;
@@ -181,25 +179,20 @@ h2 {
  #introTxt p {
     text-indent: 2.5em;
     margin-top: 50px;
-    /* margin-left: 55%; */
-    margin-left: max(55%, 600px);
-    /* margin-right: 15%;  */
+    margin-left: 55%;
     width: 30%;
     text-align: justify;
 }
 #MainCana {
     background-repeat: no-repeat;
-     position: absolute; 
-    /* margin-top: 5%; */
+    width: min(500px, 80vw);
+    position: absolute; 
     margin-left: 8%;
 }
 #introTxt2 {
-    /* font-weight: bold; */
-     margin: 6em 0; 
-    /* padding: 5px 50pxx 30px 50px; */
+    margin: 6em 0; 
     font-size: 125%;
     color: #EDF4ED;
-    /* box-shadow: 0px .5em 10px .5em #222222d3; */
     display: grid;
     grid-template-columns: 2;
     height: 500px;
@@ -220,7 +213,8 @@ grid-column-end: 1;
 }
 #MainCana2 {
     background-repeat: no-repeat;
-     position: absolute; 
+    position: absolute; 
+    width: min(500px, 80vw);
     /* margin-top: 5%; */
     right: 8%;
     /* margin-left: 53%; */
@@ -357,6 +351,6 @@ h4 {
         margin: 0px 5%;
     }
     /* queries axel */
-
+    
     /* queries lydie */
 }
