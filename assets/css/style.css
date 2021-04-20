@@ -155,7 +155,7 @@ nav div a:hover {
     grid-area: navContact;
 }
 #filler {
-    height: calc(100vh - 80px);
+    height: calc(100vh + 100px);
 }
 #introTxt {
     /* font-weight: bold; */
@@ -255,17 +255,29 @@ h4 {
 /*Nos produits Lydie*/
 .photoMosaic{
     display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: auto;
     width:70%;
-    margin-left: 15%;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin: 0px auto;
+    margin-bottom: 200px;
+    overflow: hidden;
+}
+.photoMosaic div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+.photoMosaic img {
+    width: 30vw;
+    min-width: 400px;
+    max-width: 500px;
+    height: 30vw;
+    min-height: 400px;
+    max-height: 500px;
 }
 .photoMosaic .text{
     display: block;
-    width: 100%;
     height: auto;
     text-align:center;
     color:#79B791;
@@ -274,32 +286,6 @@ h4 {
 }
 .textdeco{
     text-decoration:none;
-}
-.img1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding-bottom: 100px;
-}
-.img2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding-bottom: 50px;
-}
-.img3{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.img4{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
 }
 /*Nous retrouver Lydie*/
 .gridContainer{
@@ -356,6 +342,19 @@ h4 {
     }
     #navMenu {
         display: flex;
+    }
+    .photoMosaic img {
+        width: 90vw;
+        height: 90vw;
+        min-width: none;
+        max-width: none;
+        min-height: none;
+        max-height: none;
+    }
+    .photoMosaic {
+        grid-template-columns: repeat(auto-fill, 1fr);
+        width: 90vw;
+        margin: 0px 5%;
     }
     /* queries axel */
 
