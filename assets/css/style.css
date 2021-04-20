@@ -255,7 +255,7 @@ h4 {
 /*Nos produits Lydie*/
 .photoMosaic{
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     grid-template-rows: auto;
     width:70%;
     margin: 0px auto;
