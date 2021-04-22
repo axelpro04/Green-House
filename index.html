@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<header> <!--gaetan--> 
+<header> 
     <div id="headerPic">
         <h1>
             Green House
@@ -23,7 +23,7 @@
         </div>
     </div>
 </header>
-<nav>  <!--gaetan -->
+<nav>
     <div class="navButtons" id="navLogo">
         <a href="#" id="navLogoTxt">Green House</a>
     </div>
@@ -47,86 +47,71 @@
     </div>
 </nav>
 <div id="filler"></div>
-
-<!--introduction axel -->
-<section id="introTxt">
-    <img id="MainCana" src="assets/img/feuilleCrop.jpg" alt="feuille de cana"> 
-    <div id=containerText>
-        <h2>
-            LA MARQUE
+<main>
+    <section> <!--bandeaux-->
+        <div class="bandeau">
+            <img src="assets/img/feuilleCrop.jpg" alt="image">
+            <div class="bandeauTxt">
+                <h3>À propos de nous...</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis officiis corporis provident nulla quasi eum dolorum rem omnis fuga possimus optio quos odit sapiente enim recusandae, non quae laborum?</p>
+            </div>
+        </div>
+        <div class="bandeau" id="bandeau2">
+            <div class="bandeauTxt">
+                <h3>À propos de nous...</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis officiis corporis provident nulla quasi eum dolorum rem omnis fuga possimus optio quos odit sapiente enim recusandae, non quae laborum?</p>
+            </div>
+            <img src="assets/img/grainCrop.jpg" alt="image">
+        </div>
+    </section>
+    <section> <!--liste produits-->
+        <h2 class="sectionTitle">
+            Nos Produits
         </h2>
-        <p>
-            Green House, votre boutique de produits à base de CBD.
-        Nous avons sélectionné pour vous du CBD issu d’un chanvre 100% français et vegan.
-        Stress, douleurs, angoisses, inflammations : les vertus du CBD vous aideront au quotidien.
-        Retrouvez notre gamme de produits dans votre boutique, en plein cœur d’Abbeville.
-        </p>
-    </div>
-</section>
-<section id="introTxt2">
-    <img id="MainCana2" src="assets/img/grainCrop.jpg" alt="cuillere">
-    <div id=containerText2>
-        <h3>
-            QU’EST-CE-QUE LE CBD ?
-</h3>
-<p>
-    Le CBD (cannabidiol) est une molécule issue du chanvre, aussi appelé cannabis sativa. Cette molécule aide à lutter contre les douleurs, angoisses, inflammations, stress…
-Le CBD est une alternative efficace et durable qui vous aidera à lutter contre l’ensemble des manifestations du stress urbain.
-Aucune accoutumance et aucun effet de dépendance.
-</p>
-</div>
-</section>
-
-
-<section> <!--nos produits Lydie-->
-    <h4>Nos produits</h4>
-    <div class="photoMosaic">
-        <div class="img1">
-            <a class="textdeco" href="#">
-                <img src="assets/img/gumCrop.jpg" alt="chewing-gums">
-                <div class="text">Chewing-gums</div>
+        <div id="productList">
+            <a href="#" class="productCategory" id="productImg1">
+                <h4>Chewing-Gums</h4>
+            </a>
+            <a href="#" class="productCategory" id="productImg2">
+                <h4>Huiles</h4>
+            </a>
+            <a href="#" class="productCategory" id="productImg3">
+                <h4>Infusions</h4>
+            </a>
+            <a href="#" class="productCategory" id="productImg4">
+                <h4>E-Liquides</h4>
             </a>
         </div>
-        <div class="img2">
-            <a class="textdeco" href="#">
-                <img src="assets/img/huileCrop.jpg" alt="huileCBD">
-                <div class="text">Huiles</div>
-            </a>
+    </section> <!-- nous retrouver-->
+        <h2 class="sectionTitle">
+            Nous Retrouver
+        </h2>
+        <div id="containerFindUs">
+            <img src="assets/img/mapPlaceholder.jpg" alt="Map Adresse" id="mapFindUs">
+            <div id="contactFindUs">
+                <div id="socialFindUs">
+                    <a href="#">
+                        <i class="fab fa-instagram iconSocials"></i><span> Instagram</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i><span> Facebook</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i><span> Twitter</span>
+                    </a>
+                </div>
+                <div id="otherFindUs">
+                    <span>78 rue de la Roue</span>
+                    <span>Mardi - Samedi</span>
+                    <span>10h00 - 18h30</span>
+                    <span>06 88 93 01 35</span>
+                </div>
+            </div>
         </div>
-        <div class="img3">
-            <a class="textdeco" href="#">
-                <img src="assets/img/infusionCrop.jpg" alt="teaCBD">
-                <div class="text">Infusions</div>
-            </a>
-        </div>
-        <div class="img4">
-            <a class="textdeco" href="#">
-                <img src="assets/img/ecigaretteCrop.jpg" alt="eliquideCBD">
-                <div class="text">E-liquides</div>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section> <!--nous retrouver lydie-->
-    <h4>Nous retrouver</h4>
-    <div class="gridContainer">
-        <div class="maps">
-        <img src="assets/img/googlemaps.jpg" alt="GoogleMaps">
-        </div>
-        <div class="socialMedia">
-        <div><i id="instagram" class="fab fa-instagram"></i>
-        Green House</div>
-        <div><i id="facebook" class="fab fa-facebook-square"></i>
-        Green House</div>
-        </div>
-    </div>
-</section>
-<!--footer axel-->
-<footer><a href="#">CGV  Mentions légales   06 45 69 89 37</a>
+    </section>
+</main>
+<footer>
+    
 </footer>
-
- <!--responsive groupe-->
-
 </body>
 </html>
