@@ -7,9 +7,9 @@
     src: url(../fonts/JosefinSans-Bold.ttf);
 }
 body {
-    font-family: "Josefin";
+    font-family: "Josefin", sans-serif;
     margin: 0px;
-    background-color: #edf4ed;
+    background-color: #f4edf1;
 }
 
 #headerPic {
@@ -28,9 +28,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Amatic";
+    font-family: "Amatic", sans-serif;
     font-size: min(130px, 15vw);
-    /* font-size: 130px; */
     color: #EDF4ED;
     background-color: #00000048;
     width: 92%;
@@ -155,182 +154,187 @@ nav div a:hover {
     grid-area: navContact;
 }
 #filler {
-    height: calc(100vh - 80px);
+    height: calc(100vh + 100px);
 }
-#introTxt {
-    /* font-weight: bold; */
-    margin: 3em 0;
-    /* padding: 5px 50px 30px 50px; */
-    font-size: 125%;
-    color: #EDF4ED;
-    /* box-shadow: 0px .5em 10px .5em #222222d3; */
-    display: grid;
-    grid-template-columns: 2;
-    height: 500px; 
+/* bandeaux */
+.bandeau {
+    margin-top: 200px;
+    height: 500px;
+    background-color: #AAD1B4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#containerText{
-    height: 420px;
-    background-color: #ABD1B5;
-    margin-top : 40px;  
-}
-h2 {
-    margin-top: 90px;
-    margin-left: 55%;
-    font-size: 225%;
-}
- #introTxt p {
-    text-indent: 2.5em;
-    margin-top: 50px;
-    /* margin-left: 55%; */
-    margin-left: max(55%, 600px);
-    /* margin-right: 15%;  */
-    width: 30%;
+.bandeauTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    color: #ffffff;
     text-align: justify;
 }
-#MainCana {
-    background-repeat: no-repeat;
-     position: absolute; 
-    /* margin-top: 5%; */
-    margin-left: 8%;
+.bandeau img {
+    height: min(110%, 50vw);
+    border: 1px solid #EDF4ED;
 }
-#introTxt2 {
-    /* font-weight: bold; */
-     margin: 6em 0; 
-    /* padding: 5px 50pxx 30px 50px; */
-    font-size: 125%;
-    color: #EDF4ED;
-    /* box-shadow: 0px .5em 10px .5em #222222d3; */
-    display: grid;
-    grid-template-columns: 2;
-    height: 500px;
+.bandeauTxt h3 {
+    font-size: 2.2em;
 }
-#introTxt2 p {
-    text-indent: 2.5em;
-    margin-top: 50px;
-    margin-left: 15%;
-    margin-right: 55%;
-    text-align: justify; 
+.bandeauTxt p {
+    font-size: 1.5em;
 }
-#containerText2 {
-    height: 420px;
-    background-color: #ABD1B5;
-    margin-top : 40px; 
-grid-column-start: 1;
-grid-column-end: 1;   
+/*Nos produits*/
+.sectionTitle {
+    text-align: center;
+    font-size: 2.5em;
+    color: #79B971;
+    margin-top: 250px;
+    margin-bottom: 120px;
 }
-#MainCana2 {
-    background-repeat: no-repeat;
-     position: absolute; 
-    /* margin-top: 5%; */
-    right: 8%;
-    /* margin-left: 53%; */
-}
-h3 {
-    margin-top: 90px;
-    margin-left: 9%;
-    font-size: 225%;
-}
-footer {
+#productList {
     display: flex;
-    margin-top: 13em;
-    min-height: 3em;
-    border-top: 1px solid black;
-    background-color: #464646;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0px 15vw;
+}
+.productCategory {
+    display: flex;
     justify-content: center;
-    padding-top: 1em;
-}
-footer a {
-    text-decoration: underline solid;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-}
-h4 {
-    font-family:"Josefin";
-    text-align:center;
     align-items: center;
-    color:#79B791;
-    font-size:40px;
+    width: 30vw;
+    min-width: 430px;
+    height: 30vw;
+    min-height: 430px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 40px;
+    text-decoration: none;
+    opacity: 1;
+    transition: .5s;
 }
-/*Nos produits Lydie*/
-.photoMosaic{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    justify-items: center;
-    width:70%;
-    margin-left: 15%;
-    margin-bottom: 100px;
-    margin-top: 50px;
+.productCategory:hover {
+    background-size: 120%;
 }
-.photoMosaic .text{
-    display: block;
+.productCategory h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 45px;
+    font-size: 2em;
+    color: #EDF4ED;
+    background-color: #3541249d;
+    border: none;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    transition: .5s;
+}
+.productCategory:hover h4 {
+    height: 95%;
+    background-color: #38422ad8;
+    border: 1px solid #EDF4ED;
+}
+#productImg1 {
+    background-image: url(../img/gumCrop.jpg);
+}
+#productImg2 {
+    background-image: url(../img/huileCrop.jpg);
+}
+#productImg3 {
+    background-image: url(../img/infusionCrop.jpg);
+}
+#productImg4 {
+    background-image: url(../img/ecigaretteCrop.jpg);
+}
+/*Nous retrouver*/
+#containerFindUs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 10vw;
+    margin-bottom: 150px;
+}
+#mapFindUs {
+    width: 40vw;
+    min-width: 500px;
+    transform: scale(1);
+    transition: .5s;
+}
+#mapFindUs:hover {
+    transform: scale(1.2);
+}
+#contactFindUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    line-height: 120%;
+}
+#socialFindUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #AAD1B4;
+    margin-top: 20px;
+    padding: 30px 70px;
+}
+#socialFindUs a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#socialFindUs a:hover {
+    color: #e7ff60;
+}
+#otherFindUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #79B971;
+    padding: 30px 0px;
+}
+/* footer */
+footer {
     width: 100%;
-    height: auto;
-    text-align:center;
-    color:#79B791;
-    text-decoration:none;
-    font-size:20px;
+    height: 120px;
+    background-color: #90b98a;
 }
-.textdeco{
-    text-decoration:none;
+
+/* queries bandeau et retrouver*/
+@media screen and (max-width: 850px) {
+    .bandeau {
+        min-height: 400px;
+        height: fit-content;
+        margin-top: 200px;
+        padding-bottom: 15px;
+        flex-direction: column;
+    }
+    #bandeau2 {
+        margin-top: 400px;
+        flex-direction: column-reverse;
+    }
+    .bandeau img {
+        margin: 0px 5vw;
+        margin-top: -120px;
+        height: 70vw;
+    }
+    .bandeauTxt {
+        width: 90%;
+    }
+    #mapFindUs:hover { /* retrouver scale*/
+        transform: scale(1);
+    }
 }
-.img1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding-bottom: 100px;
-}
-.img2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding-bottom: 50px;
-}
-.img3{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.img4{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-/*Nous retrouver Lydie*/
-.gridContainer{
-    display:grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
-    padding:50px;
-    grid-column-gap:50px;
-}
-.gridContainer img{
-    width:100%;
-    height:100%; 
-}
-.maps{
-    width:100%;
-    height:auto;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.socialMedia{
-    width:20%;
-    height:20%;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
+/* queries nav et produits et retrouver*/
 @media screen and (max-width: 600px) {
-    #headerListButtons {
+    #headerListButtons { /* nav */
         align-items: center;
         justify-content: flex-end;
         flex-direction: column;
@@ -351,10 +355,36 @@ h4 {
         margin-left: 5%;
     }
     #navLogoTxt {
-        font-size: 80px;
+        font-size: min(80px, 18vw);
     }
     #navMenu {
         display: flex;
     }
-    
+    .productCategory { /* produits */
+        width: 70vw;
+        min-width: 0px;
+        height: 70vw;
+        min-height: 0px;
+    }
+    .productList {
+        padding: 0px 10vw;
+    }
+    #containerFindUs {/* nous retrouver */
+        padding: 0px 5vw;
+    }
+    #mapFindUs {
+        width: 80vw;
+        min-width: 0px;
+        transition: none;
+    }
+}
+@media (hover: none) {
+    .productCategory {
+        background-size: 120%;
+    }
+    .productCategory h4 {
+        height: 95%;
+        background-color: #38422ad8;
+        border: 1px solid #EDF4ED;
+    }
 }
